@@ -14,6 +14,9 @@ waybar = "~/.config/waybar"
 rofi = "~/.config/rofi"
 wallpapers = {target="~/wallpapers", type="symbolic"}
 
+[sway.variables.sway]
+wallpaper = "~/wallpapers/catppuccin.png"
+
 [neovim.files]
 neovim = "~/.config/nvim"
 

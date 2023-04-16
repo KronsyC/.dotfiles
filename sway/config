@@ -22,6 +22,7 @@ set $menu ~/.config/rofi/launcher
 set $runMenu rofi -modi run -show run
 set $screenshotMenu ~/.config/rofi/screenshot
 set $powerMenu ~/.config/rofi/powermenu
+set $wallpaper {{sway.wallpaper}}
 ### Gaps
 gaps inner 5 
 gaps outer 5
@@ -56,7 +57,7 @@ exec systemctl --user import-environment
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
-output "*" bg ~/wallpapers/catppuccin.png fill
+output "*" bg $wallpaper fill
 input type:keyboard {
   xkb_layout ie
 }
