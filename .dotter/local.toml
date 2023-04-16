@@ -1,6 +1,0 @@
-packages = ["default", "sway", "neovim", "mimeapps",  "shell" ]
-
-[files]
-
-[variables.sway]
-wallpaper = "~/wallpapers/catppuccin.png"
