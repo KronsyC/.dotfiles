@@ -1,0 +1,5 @@
+packages = ["default", "sway", "neovim", "mimeapps", "waybar", "shell"]
+
+[files]
+
+[variables]

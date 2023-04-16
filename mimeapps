@@ -1,0 +1,16 @@
+[Default Applications]
+application/zip=pcmanfm.desktop
+x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+image/jpeg=geeqie.desktop
+application/pdf=firefox.desktop
+
+[Added Associations]
+application/zip=pcmanfm.desktop;
+video/x-msvideo=vlc.desktop;
+video/quicktime=vlc.desktop;
+video/mp4=vlc.desktop;
+image/png=firefox.desktop;
+image/jpeg=geeqie.desktop;
+application/pdf=firefox.desktop;

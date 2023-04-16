@@ -1,0 +1,30 @@
+[helpers]
+
+[default]
+depends = []
+
+[default.files]
+
+[default.variables]
+
+
+[sway.files]
+sway = "~/.config/sway"
+
+[waybar.files]
+waybar = "~/.config/waybar"
+
+[neovim.files]
+neovim = "~/.config/nvim"
+
+[shell.files]
+fish = "~/.config/fish"
+"bash/env" = "~/.envrc"
+"bash/rc" = "~/.bashrc"
+"bash/profile" = "~/.bash_profile"
+
+
+
+[mimeapps.files]
+mimeapps = "~/.config/mimeapps.list"
+
