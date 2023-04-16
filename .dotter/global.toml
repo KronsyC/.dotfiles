@@ -10,9 +10,8 @@ depends = []
 
 [sway.files]
 sway = "~/.config/sway"
-
-[waybar.files]
 waybar = "~/.config/waybar"
+rofi = "~/.config/rofi"
 
 [neovim.files]
 neovim = "~/.config/nvim"
