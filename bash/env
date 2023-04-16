@@ -3,6 +3,6 @@
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 export XDG_CURRENT_DESKTOP=sway
-export PATH=$PATH:/home/casey/.yarn/bin
+export PATH=$PATH:/home/$USER/.yarn/bin
 export CC=/usr/bin/clang
 export CXX=/usr/bin/clang++
