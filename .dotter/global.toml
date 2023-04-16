@@ -12,6 +12,7 @@ depends = []
 sway = "~/.config/sway"
 waybar = "~/.config/waybar"
 rofi = "~/.config/rofi"
+wallpapers = {target="~/wallpapers", type="symbolic"}
 
 [neovim.files]
 neovim = "~/.config/nvim"
