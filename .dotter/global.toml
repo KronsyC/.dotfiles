@@ -16,6 +16,8 @@ wallpapers = {target="~/wallpapers", type="symbolic"}
 
 [sway.variables.sway]
 wallpaper = "~/wallpapers/catppuccin.png"
+battery = false
+temperature = false
 
 [neovim.files]
 neovim = "~/.config/nvim"

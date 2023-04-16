@@ -1,7 +1,11 @@
 {
     "position": "top", 
     "modules-left": ["sway/workspaces"],
-    "modules-right": ["network","pulseaudio", "battery", "clock"],
+    "modules-right": [
+      {{#if sway.temperature}} "temperature", {{/if}}
+      "network","pulseaudio",
+      {{#if sway.battery}}"battery", {{/if}}
+      "clock"],
     // Modules configuration
 	"sway/workspaces": {
 		"disable-scroll": true,
