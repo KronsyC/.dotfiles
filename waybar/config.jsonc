@@ -29,18 +29,16 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
 	},
 	"battery": {
+        "bat": "BAT0",
+        "full-at": 95,
         "states": {
+            "good": 95,
             "warning": 30,
-            "critical": 15,
-        	},
-		    "format": "{capacity}%",
-		    "format-warning": "{capacity}%",
-		    "format-critical": "{capacity}%",
-		    "format-charging": "{capacity}%",
-		    "format-plugged": "{capacity}%",
-		    "format-alt": "{time}",
-		    "format-full": "{capacity}%",
-            "tooltip-format": "{time}"
+            "critical": 15
+        },
+        "format": "{icon}    {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    
 	},
 	"network": {
         "format-wifi": "{essid}",

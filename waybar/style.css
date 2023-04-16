@@ -47,14 +47,22 @@ tooltip {
 	color: #A4B9EF;
 }
 
-#clock, #battery, #pulseaudio, #workspaces, #mpd  {
+#clock, #battery, #pulseaudio, #workspaces, #mpd,
+{{#if sway.temperature}}
+#network
+{{/if}}{
 	padding: 2px 10px;
     background: #332E41;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-#network {
+{{#if sway.temperature}}
+#temperature
+{{else}}
+#network
+{{/if}}
+{
     padding-left: 15px;
     padding-right: 2px;
     background: #332E41;
