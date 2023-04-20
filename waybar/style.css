@@ -50,7 +50,7 @@ tooltip {
 #clock, #battery, #pulseaudio, #workspaces, #mpd
 {{#if sway.temperature}}
 ,#network
-{{/if}}{
+{{/if}}, #custom-media{
 	padding: 2px 10px;
     background: #332E41;
     margin-top: 5px;

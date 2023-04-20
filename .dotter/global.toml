@@ -18,6 +18,7 @@ wallpapers = {target="~/wallpapers", type="symbolic"}
 wallpaper = "~/wallpapers/catppuccin.png"
 battery = false
 temperature = false
+spotify = false
 
 [neovim.files]
 neovim = "~/.config/nvim"

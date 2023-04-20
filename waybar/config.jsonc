@@ -4,6 +4,8 @@
     "modules-right": [
       {{#if sway.temperature}} "temperature", {{/if}}
       "network","pulseaudio",
+      {{#if sway.spotify}} "custom/media", {{/if}}
+      
       {{#if sway.battery}}"battery", {{/if}}
       "clock"],
     // Modules configuration
@@ -51,5 +53,18 @@
 		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
 		"format": "{volume}%",
         "format-muted": "Muted",
+    },
+    
+    "custom/media": {
+        "format": "{icon}   {}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": "",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     }
 }
