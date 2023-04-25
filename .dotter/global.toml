@@ -21,7 +21,7 @@ temperature = false
 spotify = false
 
 [neovim.files]
-neovim = "~/.config/nvim"
+"neovim/nvim" = {target="~/.config/nvim", type="symbolic", recurse=false}
 
 [shell.files]
 fish = "~/.config/fish"
@@ -30,7 +30,8 @@ fish = "~/.config/fish"
 "bash/profile" = "~/.bash_profile"
 
 
-
 [mimeapps.files]
 mimeapps = "~/.config/mimeapps.list"
 
+[tools.files]
+tools = "~/tools"

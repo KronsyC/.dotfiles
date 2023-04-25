@@ -1,4 +1,4 @@
-packages = ["default", "sway", "neovim", "mimeapps",  "shell" ]
+packages = ["default", "sway", "neovim", "mimeapps",  "shell", "tools"]
 
 [files]
 

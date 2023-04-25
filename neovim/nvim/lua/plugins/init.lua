@@ -264,7 +264,7 @@ local default_plugins = {
       dofile(vim.g.base46_cache .. "whichkey")
       require("which-key").setup(opts)
     end,
-  },
+  }
 }
 
 local config = require("core.utils").load_config()

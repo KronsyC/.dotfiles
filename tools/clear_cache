@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+
+from pathlib import Path
+import shutil
+import os
+script = os.path.dirname(os.path.realpath(__file__))
+
+cache_dirs = [line for line in (script / Path("caches.list")).read_text().splitlines() if line != ""]
+
+
+for d in cache_dirs:
+    try:
+        shutil.rmtree(d) 
+        print(f"Successfully deleted {d}")
+    except FileNotFoundError:
+        # this is totally fine
+        continue
+    except PermissionError:
+        print(f"Failed to remove {d}, permission denied")

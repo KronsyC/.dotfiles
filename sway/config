@@ -34,7 +34,8 @@ for_window [class="^.*"] border pixel 2
 # default_floating_border normal 0
 # font pango:monospace 0
 titlebar_border_thickness 0                                                     
-titlebar_padding 0
+titlebar_padding 5
+
 
 exec systemctl --user import-environment
 
