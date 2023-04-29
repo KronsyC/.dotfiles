@@ -264,6 +264,9 @@ local default_plugins = {
       dofile(vim.g.base46_cache .. "whichkey")
       require("which-key").setup(opts)
     end,
+  },
+  {
+    "mg979/vim-visual-multi"
   }
 }
 

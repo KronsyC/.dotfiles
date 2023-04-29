@@ -66,17 +66,17 @@ require("lspconfig").lua_ls.setup {
   },
 }
 
-require("lspconfig").ccls.setup {
-  on_attach = M.on_attach,
-  capabilities = M.capabilities,
-  root_dir = function(fname)
-    return vim.loop.cwd()
-  end,
-  init_options = {
-    cache = {
-      directory = "/tmp/ccls-cache"
-    }
-  }
-}
+-- require("lspconfig").ccls.setup {
+--   on_attach = M.on_attach,
+--   capabilities = M.capabilities,
+--   root_dir = function(fname)
+--     return vim.loop.cwd()
+--   end,
+--   init_options = {
+--     cache = {
+--       directory = "/tmp/ccls-cache"
+--     }
+--   }
+-- }
 
 return M

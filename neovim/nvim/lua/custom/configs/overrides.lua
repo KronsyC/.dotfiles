@@ -36,6 +36,7 @@ M.mason = {
 
     -- c/cpp stuff
     "clang-format",
+    "clangd"
   },
 }
 

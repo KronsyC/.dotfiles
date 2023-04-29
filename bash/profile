@@ -3,10 +3,12 @@
 #
 
 
-
+{{#if autostart}}
 if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
   exec sway
 fi
+
+{{/if}}
 
 # We run .bashrc after sway, as bashrc may run fish, which would block sway from ever executing
 [[ -f ~/.bashrc ]] && .  ~/.bashrc 

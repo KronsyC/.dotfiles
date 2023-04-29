@@ -101,8 +101,10 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
 bindsym XF86AudioRaiseVolume exec playerctl volume 0.05+
 bindsym XF86AudioLowerVolume exec playerctl volume 0.05-
+bindsym XF86AudioMute exec playerctl 
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.

@@ -29,6 +29,8 @@ fish = "~/.config/fish"
 "bash/rc" = "~/.bashrc"
 "bash/profile" = "~/.bash_profile"
 
+[shell.variables]
+autostart = false
 
 [mimeapps.files]
 mimeapps = "~/.config/mimeapps.list"
