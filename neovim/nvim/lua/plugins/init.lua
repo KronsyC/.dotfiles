@@ -8,6 +8,26 @@ local default_plugins = {
   { "NvChad/extensions", branch = "v2.0" },
 
   {
+    "KronsyC/nvim-license",
+    -- dir = "/home/casey/nvim-license/",
+    opts = function()
+      return {
+        name = "Samir Bioud",
+        year = "2023"
+      }
+    end,
+
+    cmd = {
+      "License",
+      "LicenseHeader",
+      "AutoLicense"
+    },
+    dependencies = {
+      {"numToStr/Comment.nvim"}
+    }
+  },
+
+  {
     "NvChad/base46",
     branch = "v2.0",
     build = function()

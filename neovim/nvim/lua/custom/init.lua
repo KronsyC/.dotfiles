@@ -9,7 +9,7 @@
 -- 0 -> directory only
 -- 1 -> file only
 -- 2 -> Either
-local root_names = { 
+local root_names = {
   [".git"] = 0
 }
 
@@ -42,7 +42,6 @@ local set_root = function()
         local is_dir = vim.fn.isdirectory(path.."/"..name)
         if root_names[name] then
           local action = root_names[name]
-          print(path.."/"..name, is_dir, action)
           if action == 0 then
             return toboolean(is_dir)
           elseif action == 1 then
